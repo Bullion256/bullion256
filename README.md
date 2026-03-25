@@ -74,3 +74,4 @@ To help a new node join the network, add the public seed node to your config:
 
 ```conf
 addnode=seed.bullion256.org:8368
+
