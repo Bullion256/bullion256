@@ -1,0 +1,12 @@
+{
+    "rpcuser": "bullrpc",
+    "rpcpassword": "bullpass",
+    "rpcport": 8332,
+    "network": "mainnet",
+    "ports": {
+        "stratum1": 5555,
+        "stratum2": 7777,
+        "stratum3": 4444,
+        "p2p": 8368
+    }
+}
