@@ -117,7 +117,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
 
-        consensus.nRuleChangeActivationThreshold = 1815;
+        consensus.nRuleChangeActivationThreshold = 130;
         consensus.nMinerConfirmationWindow = 144;
 
 // Enable SegWit from genesis

@@ -113,18 +113,9 @@ bool PermittedDifficultyTransition(const Consensus::Params& params, int64_t heig
         minimum_new_target.SetCompact(smallest_difficulty_target.GetCompact());
         if (minimum_new_target > observed_new_target) return false;
 
-}  // ← THIS closes the height % DifficultyAdjustmentInterval() == 0 block 
-else if (old_nbits != new_nbits) {
-    // Allow emergency downward adjustments
-    arith_uint256 oldTarget, newTarget;
-    oldTarget.SetCompact(old_nbits);
-    newTarget.SetCompact(new_nbits);
-
-    if (newTarget > oldTarget)
-        return true;  // allow difficulty decrease
-
-    return false;
-}
+    } else if (old_nbits != new_nbits) {
+        return false;
+    }
 
     return true;
 }
